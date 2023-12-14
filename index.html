@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap-assignment.css">
+    <title>Bootstrap Assignment</title>
+</head>
+<body>
+    <div class="container mt-5" >
+        <div class="row">
+            <div class="col-sm-4 bg-primary">
+    <h1>This is my Bootstrap</h1>
+    <p>This is my bootstrap that i want to use to still practice. This practice is going
+        to make me a good graduate according to skyline. I am very happy to be learning
+        this course.
+
+    </p>
+            </div>
+    
+        <div class="col-sm-4">
+    <h1>This is my Bootstrap</h1>
+    <p>This is my bootstrap that i want to use to still practice. This practice is going
+        to make me a good graduate according to skyline. I am very happy to be learning
+        this course.
+    </p>
+    </div>
+      
+        
+           
+                <div class="col-sm-4">
+            <h1>This is my Bootstrap</h1>
+            <p>This is my bootstrap that i want to use to still practice. This practice is going
+                to make me a good graduate according to skyline. I am very happy to be learning
+                this course.
+            </p>
+            
+            </div>
+        </div>
+
+
+        <div class="container mt-5 bg-success" >
+            <div class="row">
+                <div class="col-sm-6">
+        <h1>This is my Bootstrap</h1>
+        <p>This is my bootstrap that i want to use to still practice. This practice is going
+            to make me a good graduate according to skyline. I am very happy to be learning
+            this course.
+    
+        </p>
+                </div>
+        
+            
+          
+            
+               
+                    <div class="col-sm-6">
+                <h1>This is my Bootstrap</h1>
+                <p>This is my bootstrap that i want to use to still practice. This practice is going
+                    to make me a good graduate according to skyline. I am very happy to be learning
+                    this course.
+                </p>
+                
+                </div>
+            </div>
+
+
+            
+        <div class="container mt-5" >
+            <div class="row">
+                <div class="col-sm-12 text-muted">
+        <h1>This is my Bootstrap</h1>
+        <p>This is my bootstrap that i want to use to still practice. This practice is going
+            to make me a good graduate according to skyline. I am very happy to be learning
+            this course.
+    
+        </p>
+                </div>
+        
+            
+          
+            
+               
+            </div>
+        </div>
+        </div>
+            <div class="row mt-3">
+          <div class="col-sm-5 bg-warning p-3 ms-1">This color is orange</div>
+          <div class="col-sm-6 bg-secondary p-3 text-white">This color is ash
+            with a white text
+          </div>
+
+            </div>
+            
+            <div class="row mt-2">
+                <div class="col-sm-3 bg-danger p-3 ms-1">This color is red</div>
+                <div class="col-sm-2 bg-dark p-3 text-white">This color is black
+            </div>
+            <div class="col-sm-3 bg-primary p-3 ms-1">This color is orange</div>
+                <div class="col-sm-2 bg-info p-3 text-white">This color is ash
+            </div>
+            <div>
+                <h2>The Buttons</h2>
+            </div>
+            <div class="container-fluid ">
+            <button type="button" class="btn btn-success p-2 h-3"><a href="paying.html">Paying</a></button>
+            </div>
+            <div class="container-fluid mt-2">
+                <button type="button" class="btn btn-danger"><a href="not-paying.html">Not-Paying</a></button>
+                </div>
+
+                <div class="container-fluid mt-2">
+                    <button type="button" class="btn btn-warning text-white"><a href="problem.html">Problem</a></button>
+
+
+
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                      </div>
+
+                    </div>
+
+
+                    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+
+<script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+</script>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js">
+
+
+    </script>
+</body>
+</html>
